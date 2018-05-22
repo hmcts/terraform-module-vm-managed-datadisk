@@ -3,7 +3,7 @@
 def channel = '#devops-builds'
 
 properties(
-  [[$class: 'GithubProjectProperty', projectUrlStr: 'http://git.reform.hmcts.net/devops/terraform-module-vm-managed-datadisk/'],
+  [[$class: 'GithubProjectProperty', projectUrlStr: 'http://github.com/hmcts/terraform-module-vm-managed-datadisk/'],
    pipelineTriggers([[$class: 'GitHubPushTrigger']])]
 )
 

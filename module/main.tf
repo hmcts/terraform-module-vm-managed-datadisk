@@ -11,6 +11,9 @@ data "template_file" "server_name" {
 resource "random_string" "password" {
   length  = 20
   special = true
+      lifecycle {
+    ignore_changes = ["*"]
+  }
 }
 
 data "template_file" "storageacc_prefix" {
